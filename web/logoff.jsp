@@ -1,0 +1,3 @@
+<%
+  session.removeAttribute("logado");
+%>
