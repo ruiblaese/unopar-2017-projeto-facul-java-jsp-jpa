@@ -36,19 +36,15 @@ public class Cliente implements Serializable {
     @NotNull(message = "O nome não pode ser nulo")
     @NotBlank(message = "O nome não ser em branco")
     @Length(max = 50, message = "O nome não pode ter mais de {max} caracteres")
-    @Column(name = "nome", length = 50, nullable = false)    
+    @Column(name = "nome", length = 50, nullable = false) 
     private String nome;
     
-    @NotNull(message = "O login não pode ser nulo")
-    @NotBlank(message = "O login não ser em branco")
     @Length(max = 50, message = "O login não pode ter mais de {max} caracteres")
-    @Column(name = "nome", length = 50, nullable = false)    
+    @Column(name = "login", length = 50)    
     private String login;
-    
-    @NotNull(message = "O senha não pode ser nulo")
-    @NotBlank(message = "O senha não ser em branco")
+        
     @Length(max = 10, message = "O senha não pode ter mais de {max} caracteres")
-    @Column(name = "nome", length = 50, nullable = false)    
+    @Column(name = "senha", length = 50)    
     private String senha;
     
     @NotNull(message = "O telefone não pode ser nulo")

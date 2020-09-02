@@ -18,7 +18,7 @@ import java.util.Date;
 
 public class Funcoes {
     
-    public static final String TITULOHTML = "Cacau Show";
+    public static final String TITULOHTML = "Unopar Choco";
 
     public static String CalendarToString(Calendar calendar) {
         if (calendar != null) {

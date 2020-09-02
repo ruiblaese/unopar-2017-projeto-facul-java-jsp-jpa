@@ -11,7 +11,7 @@ public class EntityManagerUtil {
 
     public static EntityManager getEntityManager() {
         if (factory == null) {
-            factory = Persistence.createEntityManagerFactory("CacauShowDB");
+            factory = Persistence.createEntityManagerFactory("unoparchocodb");
         }                
         if ((em == null) || (!em.isOpen())) {
             em = factory.createEntityManager();
