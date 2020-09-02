@@ -1,0 +1,15 @@
+version: '3'
+services:
+  database:
+    image: "postgres"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=unoparchoco      
+    #Caso deseje um volume persistente descomentar as linhas comentadas abaixo
+    #volumes:
+    #  - database-data:/var/lib/postgresql/data/ 
+    ports:
+        - "5432:5432"
+#volumes:
+#  database-data: 
